@@ -1,47 +1,65 @@
-# Webová anketa
+# Webova-anketa
 
-Jednoduchá webová anketa postavená na Node.js s Express.js a EJS.
+Klikni na odkaz níže pro přístup k live aplikaci:
+
+🔗 **[Webová anketa](https://webova-anketa.example.com/)** (bude dostupné po nasazení na hosting)
 
 ## Popis
 
-Tato aplikace umožňuje uživatelům vyplnit anketu s otázkami o jménu, věku, oblíbeném programovacím jazyku, úrovni zkušeností a komentáři. Odpovědi se ukládají do souboru `responses.json` a lze je zobrazit na stránce výsledků.
+Jednoduchá webová anketa postevená na Node.js s Express.js a EJS. Uživatelé mohou vyplnit anketu s otázkami o:
+- Jménu
+- Věku
+- Oblíbeném programovacím jazyku
+- Úrovni zkušeností (Začátečník/Středně pokročilý/Pokročilý)
+- Komentáři
 
-## Požadavky
+Všechny odpovědi se ukládají a lze je zobrazit v tabulce výsledků.
 
-- Node.js (doporučeno: poslední verze)
-- NPM (správce balíčků)
+## Technologie
 
-## Instalace
+- **Node.js** - JavaScript runtime
+- **Express.js** - Web framework
+- **EJS** - Template engine
+- **Bootstrap 5** - CSS framework
+- **JSON** - Ukládání dat
 
-1. Naklonujte nebo stáhněte projekt.
-2. Spusťte `npm install` pro instalaci závislostí.
+## Instalace a spuštění
 
-## Spuštění
+```bash
+# Naklonuj repo
+git clone https://github.com/nevreladavid/webova-anketa.git
+cd webova-anketa
 
-Spusťte server pomocí:
+# Instalace závislostí
+npm install
 
-```
+# Spuštění serveru
 npm start
 ```
 
 Server bude běžet na `http://localhost:3000`.
 
-Otevřete tuto adresu v prohlížeči pro přístup k anketě.
+## Struktura projektu
+
+```
+webova-anketa/
+├── views/              # EJS šablony
+│   ├── index.ejs      # Formulář ankety
+│   └── results.ejs    # Tabulka výsledků
+├── server.js          # Hlavní server
+├── responses.json     # Uložené odpovědi
+├── package.json       # Závislosti
+└── README.md          # Tento soubor
+```
 
 ## Funkce
 
-- **Anketa**: Formulář s různými typy otázek (text, číslo, select, radio, textarea).
-- **Ukládání odpovědí**: Odpovědi se ukládají do `responses.json`.
-- **Výsledky**: Tabulka se všemi odpověďmi na `/results`.
+✅ Formulář s různými typy otázek  
+✅ Ukládání odpovědí do JSON  
+✅ Tabulka s výsledky všech odpovědí  
+✅ Seřazení odpovědí od nejnovější  
+✅ Responsivní design s Bootstrapem
 
-## Struktura projektu
+## Autor
 
-- `server.js`: Hlavní soubor serveru (Express.js s EJS)
-- `views/index.ejs`: Šablona pro anketu
-- `views/results.ejs`: Šablona pro výsledky
-- `responses.json`: Soubor s odpověďmi
-- `package.json`: Konfigurace projektu a závislosti
-
-## Poznámky
-
-Odpovědi se ukládají do souboru `responses.json` ve formátu JSON.
+nevreladavid
