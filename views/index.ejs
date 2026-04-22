@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webová anketa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center mb-4">Webová anketa</h1>
+                <form action="/submit" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Jméno:</label>
+                        <input type="text" name="name" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Věk:</label>
+                        <input type="number" name="age" class="form-control" id="age" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="language" class="form-label">Oblíbený programovací jazyk:</label>
+                        <select name="language" class="form-select" id="language" required>
+                            <option value="">Vyberte...</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="C++">C++</option>
+                            <option value="Jiný">Jiný</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="experience" class="form-label">Úroveň zkušeností:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experience" id="beginner" value="Začátečník" required>
+                            <label class="form-check-label" for="beginner">Začátečník</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experience" id="intermediate" value="Středně pokročilý">
+                            <label class="form-check-label" for="intermediate">Středně pokročilý</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experience" id="advanced" value="Pokročilý">
+                            <label class="form-check-label" for="advanced">Pokročilý</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Komentář:</label>
+                        <textarea name="comment" class="form-control" id="comment" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Odeslat</button>
+                </form>
+                <div class="mt-4">
+                    <a href="/results" class="btn btn-secondary">Zobrazit výsledky</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
