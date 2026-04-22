@@ -2,5 +2,5 @@
 
 Klikni na odkaz níže pro přístup k live aplikaci:
 
-🔗 **[Webová anketa]([https://webova-anketa.example.com/](https://webova-anketa-v6se.onrender.com))**
+🔗 **[Webová anketa](https://webova-anketa-v6se.onrender.com)**
 
